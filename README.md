@@ -5,15 +5,15 @@ There the algorithm used is K-nearest neighbours. Support vector machine would b
 
 The interesting thing is that 30% of the time, the algorithm will say that the cancer will reccur. The algorithm did not simply choose a single answer to stick with. Cancer is a complex issue, and the data was not one that could be reasonably seperated by what is essentially a straight line. So the optimization process essentially adjusted the vector, so that 70% of the time, when I ask whether or not the cancer will reccur, the data will fall on the non-reccurring side of the line. The K-nearest neighbours, although having its own flaws, is much more appropriate for the data at hand.
 
-I modified the dataset so that it would be purely comprised of numbers, no strings or ranges of numbers (i.e. 1-5) as indexes.
-
 
 # Acknowledgments
 Code:
 This code is heavily based off of Sentdex's algorithm for classifying between benign and malignant cancer.
-I essentially modified that code to work with another dataset with different data.
+I essentially modified that code to work with another breast-cancer dataset.
 His website has many useful tutorials, and I highly recommend them:
 https://pythonprogramming.net/
+
+I also modified the dataset so that it would be purely comprised of numbers, no strings or ranges of numbers (i.e. 1-5) as indexes. This way the algorithm would be prepared to work with the data.
 
 Data:
 Citation Request:
