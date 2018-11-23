@@ -3,6 +3,8 @@ Use machine learning to classify whether or not the cancer will reoccur
 
 There are two types of algorithms here. Support Vector Machine and K-nearest neighbours.
 
+I modified the dataset so that it would be purely comprised of numbers, no strings or ranges of numbers (i.e. 1-5) as indexes.
+
 # Acknowledgments
 Code:
 This code is heavily based off of Sentdex's algorithm for classifying between benign and malignant cancer
