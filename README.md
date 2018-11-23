@@ -1,13 +1,17 @@
-# Reoccuring-Cancer-Classifier
-Use machine learning to classify whether or not the cancer will reoccur
+# Re-occuring-Cancer-Classifier
+Use machine learning to classify whether or not the breast cancer will reccur in a particular patient.
 
-There are two types of algorithms here. Support Vector Machine and K-nearest neighbours.
+There the algorithm used is K-nearest neighbours. Support vector machine would be about 70% accurate. SVM is particularly ineffective here because we have 201 instances of no recurrence events, and 85 instances of recurrence events. Dividing the number of recurrence events by the total dataset we get approximately 70.3% accuracy. This is the equivalent of a patient asking you whether or not they will get breast cancer again, and no matter what telling them that they will not. 
+
+The interesting thing is that 30% of the time, the algorithm will say that the cancer will reccur. The algorithm did not simply choose a single answer to stick with. Cancer is a complex issue, and the data was not one that could be reasonably seperated by what is essentially a straight line. So the optimization process essentially adjusted the vector, so that 70% of the time, when I ask whether or not the cancer will reccur, the data will fall on the non-reccurring side of the line. The K-nearest neighbours, although having its own flaws, is much more appropriate for the data at hand.
 
 I modified the dataset so that it would be purely comprised of numbers, no strings or ranges of numbers (i.e. 1-5) as indexes.
 
+
 # Acknowledgments
 Code:
-This code is heavily based off of Sentdex's algorithm for classifying between benign and malignant cancer
+This code is heavily based off of Sentdex's algorithm for classifying between benign and malignant cancer.
+I essentially modified that code to work with another dataset with different data.
 His website has many useful tutorials, and I highly recommend them:
 https://pythonprogramming.net/
 
